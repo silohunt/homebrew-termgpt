@@ -1,10 +1,10 @@
 class Termgpt < Formula
   desc "Platform-aware shell tool that converts natural language to Unix commands using local LLM"
   homepage "https://github.com/silohunt/termgpt"
-  url "https://github.com/silohunt/termgpt/archive/v0.9.1.tar.gz"
-  sha256 "a4045e91b653fd2ff3b5c26a0b57295c59bda74e7ba69600c451db54d9c4ef0c"
+  url "https://github.com/silohunt/termgpt/archive/v0.9.0.tar.gz"
+  sha256 "1c6c93adcef6bb262b3b0ba2dc545aaa9fb76f5e371aeac0300c0180bea58dde"
   license "MIT"
-  version "0.9.1" # Cache refresh commit
+  version "0.9.0"
 
   depends_on "jq"
   depends_on "curl"
@@ -34,12 +34,12 @@ class Termgpt < Formula
 
   def caveats
     <<~EOS
-      To get started, run:
+      TermGPT requires Ollama to run. Install and configure it:
+        brew install ollama
+        ollama serve &
         termgpt init
 
-      This will install Ollama (if needed), download the model, and configure TermGPT.
-
-      Then you can use:
+      To get started:
         termgpt "find all python files larger than 1MB"
         termgpt shell  # Interactive REPL mode
 
