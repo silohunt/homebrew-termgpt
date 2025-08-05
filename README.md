@@ -11,23 +11,22 @@ brew install termgpt
 
 ## Getting Started
 
-After installation, you'll need to set up Ollama and initialize TermGPT:
+After installation, simply run:
 
 ```bash
-# Install Ollama (if not already installed)
-brew install ollama
-
-# Start Ollama service
-brew services start ollama
-# OR run manually: ollama serve
-
-# Initialize TermGPT
+# Initialize TermGPT (this will install Ollama if needed)
 termgpt init
 
 # Start using TermGPT
 termgpt "find all python files larger than 1MB"
 termgpt shell  # Interactive REPL mode
 ```
+
+The `termgpt init` command will:
+- Install Ollama automatically if not present
+- Start the Ollama service
+- Download the default model (~4GB)
+- Configure platform-specific settings
 
 ## What's Included
 

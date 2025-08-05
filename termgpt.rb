@@ -34,12 +34,12 @@ class Termgpt < Formula
 
   def caveats
     <<~EOS
-      TermGPT requires Ollama to run. Install and configure it:
-        brew install ollama
-        ollama serve &
+      To get started, run:
         termgpt init
 
-      To get started:
+      This will install Ollama (if needed), download the model, and configure TermGPT.
+
+      Then you can use:
         termgpt "find all python files larger than 1MB"
         termgpt shell  # Interactive REPL mode
 
