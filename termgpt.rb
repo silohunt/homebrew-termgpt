@@ -33,9 +33,7 @@ class Termgpt < Formula
 
   def caveats
     <<~EOS
-      TermGPT requires Ollama to run. Install and configure it:
-        brew install ollama
-        ollama serve &
+      To initialize TermGPT and install dependencies:
         termgpt init
 
       To get started:
