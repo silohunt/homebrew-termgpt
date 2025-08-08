@@ -1,10 +1,10 @@
 class Termgpt < Formula
   desc "Platform-aware shell tool that converts natural language to Unix commands using local LLM"
   homepage "https://github.com/silohunt/termgpt"
-  url "https://github.com/silohunt/termgpt/archive/v0.9.3.tar.gz"
-  sha256 "0bb5c7eec966ff97c7985180e3b7cb062caf0f98dff17210448f54fe7f935279"
+  url "https://github.com/silohunt/termgpt/archive/v0.9.4.tar.gz"
+  sha256 "e6933af8ffd691aa2f0ece6c8c956196f1df72168e99d57febf33e53137d59ca"
   license "MIT"
-  version "0.9.3"
+  version "0.9.4"
 
   depends_on "jq"
   depends_on "curl"
